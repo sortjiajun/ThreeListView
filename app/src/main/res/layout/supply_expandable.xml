@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <android.support.percent.PercentRelativeLayout
+
+        android:background="@color/thin_back1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/expandable_navigation_1"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/order_map"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:maxEms="11"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_toRightOf="@id/expandable_navigation_1"
+            android:id="@+id/expandable_sendPl"
+            android:textSize="12sp"
+            android:textColor="@android:color/white"
+            android:text="1111111111111111111"
+            app:layout_widthPercent="53%"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/expandable_navigation_2"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/order_map"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:gravity="right"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/expandable_navigation_2"
+            android:id="@+id/expandable_park"
+            android:textSize="12sp"
+            android:maxEms="6"
+            android:textColor="@android:color/white"
+            android:layout_centerVertical="true"
+            tools:text="信诺物流园/鸿力物流园"
+            android:singleLine="true"
+            app:layout_widthPercent="22%"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+    </android.support.percent.PercentRelativeLayout>
+</LinearLayout>

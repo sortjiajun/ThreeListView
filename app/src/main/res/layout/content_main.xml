@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                               xmlns:app="http://schemas.android.com/apk/res-auto"
+                                               xmlns:tools="http://schemas.android.com/tools"
+                                               android:layout_width="match_parent"
+                                               android:layout_height="match_parent"
+                                               android:background="@color/white">
+    <jiajun.threelevelistview.layout.PullRefreshLayout
+        android:id="@+id/supply_pullRefreshLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="89%"
+        app:layout_widthPercent="100%">
+        <jiajun.threelevelistview.layout.NormalHeaderView
+            android:id="@+id/expand_header_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    <ExpandableListView
+        android:id="@+id/supply_expandableListView_Parent"
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none"
+        android:scrollbars="none"
+        android:scrollingCache="false"
+        android:groupIndicator="@null" />
+        <jiajun.threelevelistview.layout.NormalFooterView
+            android:id="@+id/expand_footer_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+</jiajun.threelevelistview.layout.PullRefreshLayout>
+    <FrameLayout
+        android:layout_below="@id/supply_pullRefreshLayout"
+        android:background="@color/think_back_2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_widthPercent="100%"
+        app:layout_heightPercent="11%">
+        <TextView
+            android:gravity="center"
+            android:id="@+id/supply_tip"
+            android:text="@string/supply_tip"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/supply_create_tv"
+            tools:visibility="visible"
+            android:visibility="gone"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="28sp"
+            android:background="@color/black"
+            android:textColor="@color/red_1"
+            android:text="@string/create_supply"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+
+</android.support.percent.PercentRelativeLayout>
